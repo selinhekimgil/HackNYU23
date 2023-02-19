@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+        <!-- adding CSS and JavaScript -->
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Wake of Quake</title>
+    </head>
+
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="img/Untitled_Artwork.gif" alt=""></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="safety.html">SAFETY TIPS</a></li>
+                        <li><a href="wellness.html">WELLNESS RESOURCES</a></li>
+                        <li><a href="donate.html">DONATE</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            <div class="text-box">
+                <h1>Wake of Quake</h1>
+                <br>
+                <h2>Earthquake Relief in Turkey and Syria</h2>
+                <br>
+                <p>Offering a variety of wellness resources to help people manage their physical and emotional well-being during and after an earthquake. <br> Providing donation links as well as important information to those who want to help from farther away.</p>
+                <a href="https://www.gofundme.com/f/turkey-amidst-earthquake" target="_blank" class="hero-btn">See what NYU is doing to help</a>
+            </div>
+        </section>
+
+        <section class="news">
+            <h1>How and Where to Donate</h1>
+            <p>Credits to Yavuz Kaklıkkaya, who is part of the NYU Turkish Cultural Association, for gathering information on these organizations.</p>
+            <ul>
+                <li class="list active" data-filter="all">All</li>
+                <li class="list" data-filter="usd">USD</li>
+                <li class="list" data-filter="eur">EUR</li>
+                <li class="list" data-filter="gbp">GBP</li>
+                <li class="list" data-filter="tl">TL</li>
+            </ul>
+            <div class="row">
+                <div class="itemBox usd">
+                    <div class="news-col">
+                        <h3> <a href="https://www.gofundme.com/f/turkey-amidst-earthquake" target="_blank">Turkish Philanthropy Funds via NYU Turkish Students Association</a></h3>
+                        <p>Funds go directly to US based aid foundation “Turkish Philanthropy Funds”.</p>
+                    </div>
+                </div>
+                <div class="itemBox usd eur tl">
+                    <div class="news-col">
+                        <h3> <a href="https://www.akut.org.tr/en/donation" target="_blank">AKUT Foundation</a></h3>
+                        <p>NGO for rescue operations in Turkey currently working actively in the affected region. Accepts payments with credit/bank cards.</p>
+                    </div>
+                </div>
+                <div class="itemBox usd eur gbp tl">
+                    <div class="news-col">
+                        <h3> <a href="https://ahbap.org/disasters-turkey" target="_blank">AHBAP</a></h3>
+                        <p>Turkey based aid organization that is currently active in the region. Accepts donations via SWIFT transfers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="itemBox usd eur tl">
+                    <div class="news-col">
+                        <h3><a href="https://en.afad.gov.tr/earthquake-donation-accounts" target="_blank">AFAD</a></h3>
+                        <p>Turkey's official disaster and emergency authority. Accepts donations via SWIFT transfers.</p>
+                    </div>
+                </div>
+                <div class="itemBox gbp">
+                    <div class="news-col">
+                        <h3><a href="https://www.oxfam.org.uk/oxfam-in-action/current-emergencies/turkey-and-syria-earthquake-appeal/">Oxfam</a></h3>
+                        <p>UK based global aid foundation.</p>
+                    </div>
+                </div>
+                <div class="itemBox gbp">
+                    <div class="news-col">
+                        <h3><a href="https://www.justgiving.com/campaign/kahramanmarasearthquake">Turkey Mozaik Foundation</a></h3>
+                        <p>Founded by Turkish migrants living in the UK. Boğaziçi University alumni are among them.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="itemBox eur">
+                    <div class="news-col">
+                        <h3><a href="https://participate.roteskreuz.at/erdbeben-in-syrien-und-tuerkei/" target="_blank">Red Cross Austria</a></h3>
+                        <p>The webpage is in German.</p>
+                    </div>
+                </div>
+                <div class="itemBox eur">
+                    <div class="news-col">
+                        <h3><a href="https://www.tagesschau.de/spendenkonten/spendenkonten-137.html">Bündnis Entwicklung Hilft & Aktion Deutschland Hilft</a></h3>
+                        <p>The webpage is in German. The foundations are known aid platforms in Germany.</p>
+                    </div>
+                </div>
+                <div class="itemBox eur">
+                    <div class="news-col">
+                        <h3><a href="https://cydd.de/wp-content/uploads/2023/02/spendenaufruf_erdbeben_230206-709x1024.jpeg">Verein zur Förderung der Zeitgemäßen Lebensweise</a></h3>
+                        <p>The German chapter of the known Turkish charity “Çağdaş Yaşamı Destekleme Derneği”. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+                var navLinks = document.getElementById("navLinks");
+
+                function showMenu() {
+                    navLinks.style.right = "0";
+                }
+                function hideMenu() {
+                    navLinks.style.right = "-200px";
+                }
+        </script>
+    </body>
+
+                <!-- <section>
+                    <ul>
+                        <li class="list active" data-filter="All">All</li>
+                        <li class="list" data-filter="usd">USD</li>
+                        <li class="list" data-filter="eur">EUR</li>
+                        <li class="list" data-filter="gbp">GBP</li>
+                        <li class="list" data-filter="tl">TL</li>
+                    </ul>
+                
+                    <div class="bonus-container">
+                        1
+                        Turkish Philanthropy Funds via NYU Turkish Students Association
+                        <div class="itemBox usd">
+                            <div class="bonus-card">
+                                <img class="project-image" src="src/images/EngineeringClub.png" alt="Rowan University Competition">
+                                <h3>Turkish Philanthropy Funds via NYU Turkish Students Association <br> <font color="red">Currency: USD</font></h3>
+                                <ul class="subtext">Funds go directly to US based aid foundation “Turkish Philanthropy Funds” </ul>
+                                <hr/>
+                                <p class="subtext2"><a class="project-link" href="https://www.gofundme.com/f/turkey-amidst-earthquake" target="_blank" rel="noopener noreferrer">Donation link!</a></p>
+                            </div>
+                        </div>
+                        2
+                        AKUT Foundation
+                        <div class="bonus-card">
+                            <img class="project-image" src="src/images/EngineeringClub.png" alt="Rowan University Competition">
+                            <h3>AKUT Foundation <br> <font color="red">Currency: USD, EUR, TL</font></h3>
+                            <ul class="subtext">NGO for rescue operations in Turkey currently working actively in the affected region. Accepts payments with credit/bank cards.</ul>
+                            <hr/>
+                            <p class="subtext2"><a class="project-link" href="https://www.akut.org.tr/en/donation" target="_blank" rel="noopener noreferrer">Donation link!</a></p>
+                        </div>
+                        3
+                        AHBAP
+                        <div class="bonus-card">
+                            <img class="project-image" src="src/images/EngineeringClub.png" alt="Rowan University Competition">
+                            <h3>AHBAP <br> <font color="red">Currency: USD, EUR, GBP, TL</font></h3>
+                            <ul class="subtext">Turkey based aid organization that is currently active in the region. Accepts donations via SWIFT transfers.</ul>
+                            <hr/>
+                            <p class="subtext2"><a class="project-link" href="https://ahbap.org/disasters-turkey" target="_blank" rel="noopener noreferrer">Donation link!</a></p>
+                        </div>
+                        4
+                        AFAD
+                        <div class="bonus-card">
+                            <img class="project-image" src="src/images/EngineeringClub.png" alt="Rowan University Competition">
+                            <h3>AFAD <br> <font color="red">Currency: USD, EUR, TL</font></h3>
+                            <ul class="subtext">Turkey's official disaster and emergency authority. Accepts donations via SWIFT transfers.</ul>
+                            <hr/>
+                            <p class="subtext2"><a class="project-link" href="https://en.afad.gov.tr/earthquake-donation-accounts" target="_blank" rel="noopener noreferrer">Donation link!</a></p>
+                        </div>
+                    </div>
+                </section> --> 
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.list').click(function(){
+                    const value = $(this).attr('data-filter');
+                    if (value == 'all'){
+                        $('.itemBox').show('1000');
+                    }
+                    else {
+                        $('.itemBox').not('.'+value).hide('1000');
+                        $('.itemBox').filter('.'+value).show('1000');
+                    }
+                })
+            })
+        </script>
+    <!-- </body> -->
+</html>

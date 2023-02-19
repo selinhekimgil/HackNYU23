@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+        <!-- adding CSS and JavaScript -->
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Wake of Quake</title>
+    </head>
+
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="img/Untitled_Artwork.gif" alt=""></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="safety.html">SAFETY TIPS</a></li>
+                        <li><a href="wellness.html">WELLNESS RESOURCES</a></li>
+                        <li><a href="donate.html">DONATE</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            <div class="text-box">
+                <h1>Wake of Quake</h1>
+                <br>
+                <h2>Earthquake Relief in Turkey and Syria</h2>
+                <br>
+                <p>Offering a variety of wellness resources to help people manage their physical and emotional well-being during and after an earthquake. <br> Providing donation links as well as important information to those who want to help from farther away.</p>
+                <a href="https://www.gofundme.com/f/turkey-amidst-earthquake" target="_blank" class="hero-btn">See what NYU is doing to help</a>
+            </div>
+        </section>
+
+        <!-- <section class="news">
+            <h1>Latest News</h1>
+            <p>k;ajhf</p>
+            <div class="row">
+                <div class="news-col">
+                    <h3>news 1</h3>
+                    <p>lerhg;</p>
+                </div>
+                <div class="news-col">
+                    <h3>news 2</h3>
+                    <p>lerhg;</p>
+                </div>
+                <div class="news-col">
+                    <h3>news 3</h3>
+                    <p>lerhg;</p>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="wellness">
+            <h1>Safety Tips</h1>
+            <p>What to do when you are stuck in this situation</p>
+
+            <div class="row">
+                <div class="wellness-col">
+                    <img src="img/Screenshot 2023-02-19 at 6.09.25 AM.png" alt="">
+                    <div class="layer">
+                        <h3>DROP</h3>
+                    </div>
+                </div>
+                <div class="wellness-col">
+                    <img src="img/Screenshot 2023-02-19 at 6.09.37 AM.png" alt="">
+                    <div class="layer">
+                        <h3>COVER</h3>
+                    </div>
+                </div>
+                <div class="wellness-col">
+                    <img src="img/Screenshot 2023-02-19 at 6.09.45 AM.png" alt="">
+                    <div class="layer">
+                        <h3>HOLD ON</h3>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: left;">
+                <li>Try to stay calm.</li> 
+                <br><li>Check yourself and others for injuries. Give first aid to people who are injured or trapped. Take care of life-threatening situations first. Get help if necessary.</li>
+                <br><li>Check on neighbours, especially the elderly or people with disabilities.</li>
+                <br><li>Confine or secure pets.</li>
+                <br><li>Use the battery-operated radio from your emergency kit to listen for information and instructions.</li>
+                <br><li>Do not use the telephone except to report a life-threatening injury. Please leave the lines free for official use.</li>
+                <br><li>If possible, put on sturdy shoes and protective clothing to help prevent injury from debris, especially broken glass.</li>
+                <br><li>If you are inside, check the building for structural damage. If you suspect it is unsafe, leave and do not re-enter.</li>
+                <br><li>Do not turn on light switches or light matches until you are sure that there aren't any gas leaks or flammable liquids spilled. Use a flashlight to check utilities.</li>
+                <br><li>Do not shut off utilities unless they are damaged, leaking (a gas leak smells like rotten eggs) or if there is a fire. If you turn the gas off, don't turn it on again. That must be done by a qualified technician.</li>
+                <br><p>Source: <a href="https://www.getprepared.gc.ca/cnt/hzd/ftr-en.aspx">Get Prepared Canada</a></p>
+            </div>
+        </section>
+
+        <section class="footer">
+
+        </section>
+
+        <script>
+                var navLinks = document.getElementById("navLinks");
+
+                function showMenu() {
+                    navLinks.style.right = "0";
+                }
+                function hideMenu() {
+                    navLinks.style.right = "-200px";
+                }
+        </script>
+    </body>
+</html>

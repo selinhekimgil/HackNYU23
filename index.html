@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+        <!-- adding CSS and JavaScript -->
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Wake of Quake</title>
+    </head>
+
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="img/Untitled_Artwork.gif" alt=""></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="safety.html">SAFETY TIPS</a></li>
+                        <li><a href="wellness.html">WELLNESS RESOURCES</a></li>
+                        <li><a href="donate.html">DONATE</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            <div class="text-box">
+                <h1>Wake of Quake</h1>
+                <br>
+                <h2>Earthquake Relief in Turkey and Syria</h2>
+                <br>
+                <p>Offering a variety of wellness resources to help people manage their physical and emotional well-being during and after an earthquake. <br> Providing donation links as well as important information to those who want to help from farther away.</p>
+                <a href="https://www.gofundme.com/f/turkey-amidst-earthquake" target="_blank" class="hero-btn">See what NYU is doing to help</a>
+            </div>
+        </section>
+
+        <!-- <section class="news">
+            <h1>Latest News</h1>
+            <p>k;ajhf</p>
+            <div class="row">
+                <div class="news-col">
+                    <h3>news 1</h3>
+                    <p>lerhg;</p>
+                </div>
+                <div class="news-col">
+                    <h3>news 2</h3>
+                    <p>lerhg;</p>
+                </div>
+                <div class="news-col">
+                    <h3>news 3</h3>
+                    <p>lerhg;</p>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="support">
+            <h1>Is the earthquake over? No.</h1>
+
+            <div class="row">
+                <div class="support-col">
+                    <img src="img/shake1.webp" alt="">
+                    <h3>"We need help from everyone to save our people"</h3>
+                </div>
+                <div class="support-col">
+                    <img src="img/shake2.jpeg" alt="">
+                    <h3>"They're making noises but nobody is coming. They're saying, 'save us', but we can't save them"</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="support-col">
+                    <img src="img/shake3.jpeg" alt="">
+                    <h3>"When my daughter is lying in the cold, how can I lie down in a warm bed?"</h3>
+                </div>
+                <div class="support-col">
+                    <img src="img/shake4.webp" alt="">
+                    <h3>Photo of Turkish man holding hand of dead daughter</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="support-col">
+                    <img src="img/shake6.jpeg" alt="">
+                    <h3>Death toll passes 11,000</h3>
+                </div>
+                <div class="support-col">
+                    <img src="img/shake5.jpeg" alt="">
+                    <h3>"It was like a doomsday scenario. I started imagining how I would have to rescue my son from the rubble"</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+
+        </section>
+
+        <script>
+                var navLinks = document.getElementById("navLinks");
+
+                function showMenu() {
+                    navLinks.style.right = "0";
+                }
+                function hideMenu() {
+                    navLinks.style.right = "-200px";
+                }
+        </script>
+    </body>
+
+    <!-- <body style="font-family: 'Raleway';">
+        <ul class="tabs">
+            <li data-tab-target="#home" class="active tab">Home</li>
+            <li data-tab-target="#sos" class="tab">SOS</li>
+            <li data-tab-target="#donate" class="tab">Donate</li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="home" data-tab-content class="active">
+                <h1>Home</h1>
+                <p>This is the home page</p>
+            </div>
+            <div id="sos" data-tab-content>
+                <h1>SOS Page</h1>
+                <p>Save your emergency contacts and send a quake SOS message to them with the click of a button.</p>
+                <section>
+                    <h3>Add Recipients</h3>
+                    <p>
+                      Enter one or more phone numbers to send your messages to. Press Enter
+                      or click on Add after each number. All numbers have to be in the
+                      <a
+                        href="https://www.twilio.com/docs/glossary/what-e164"
+                        target="_blank"
+                        >E.164 format</a
+                      >.
+                    </p>
+                    <form id="recipientForm">
+                      <fieldset>
+                        <label for="newRecipientInput">New Recipient Phone Number:</label>
+                        <input type="tel" id="newRecipientInput" required />
+                        <input class="button-primary"
+                               type="submit"
+                               value="Add" />
+                      </fieldset>
+                    </form>
+                    <p><strong>Current list of recipients:</strong></p>
+                    <ul id="recipients"></ul>
+                </section>
+                <section>
+                    <h3>Send your notification</h3>
+                    <form id="sendNotificationForm">
+                      <fieldset>
+                        <label for="passcodeInput" required>Application Passcode</label>
+                        <input name="passcode" id="passcodeInput" />
+                        <label for="messageInput">Write your message:</label>
+                        <textarea name="message" id="messageInput" required></textarea>
+                        <input class="button-primary" type="submit" value="Send" />
+                      </fieldset>
+                    </form>
+                </section>
+                <section>
+                    <h3>Result</h3>
+                    <p id="resultSection"></p>
+                </section>
+            </div>
+            <div id="donate" data-tab-content>
+                <h1>Donate!</h1>
+                <p>This is the donation page</p>
+
+                <div id="buttons">
+                    <button class="btn" onclick="filterObjects('all')">Show All Currencies</button>
+                    <button class="btn" onclick="filterObjects('usd')">USD</button>
+                    <button class="btn" onclick="filterObjects('eur')">EUR</button>
+                    <button class="btn" onclick="filterObjects('gbp')">GBP</button>
+                    <button class="btn" onclick="filterObjects('tl')">TL</button>
+                </div>
+
+                <div class="objects">
+                    <div class="box usd">
+                        <img class="project-image" src="img/gofundme.png" alt="Turkish Philanthropy Funds via NYU Turkish Students Association">
+                        <h3 class="subtext"> <strong> Turkish Philanthropy Funds via NYU Turkish Students Association <br> <font color="red">Currency: USD</font></strong></h3>
+                        <ul class="subtext">Funds go directly to US based aid foundation “Turkish Philanthropy Funds” </ul>
+                        <hr/>
+                        <p class="subtext2"><a class="project-link" href="https://www.gofundme.com/f/turkey-amidst-earthquake" target="_blank" rel="noopener noreferrer">Donation link!</a></p>
+                    </div>
+                    <div class="box usd eur tl">
+                        <img class="project-image" src="img/akut-logo.png" alt="AKUT Foundation">
+                        <h3 class="subtext"> <strong>AKUT Foundation <br> <font color="red">Currency: USD, EUR, TL</font></strong></h3>
+                        <ul class="subtext">NGO for rescue operations in Turkey currently working actively in the affected region. Accepts payments with credit/bank cards.</ul>
+                        <hr/>
+                        <p class="subtext2"><a class="project-link" href="https://www.akut.org.tr/en/donation" target="_blank" rel="noopener noreferrer">Donation link!</a></p>
+                    </div>
+                    <div class="box usd eur gbp tl">
+                        <img class="project-image" src="img/ahbap.png" alt="AHBAP">
+                        <h3 class="subtext"> <strong> AHBAP <br> <font color="red">Currency: USD, EUR, GBP, TL</font></strong></h3>
+                        <ul class="subtext">Turkey based aid organization that is currently active in the region. Accepts donations via SWIFT transfers.</ul>
+                        <hr/>
+                        <p class="subtext2"><a class="project-link" href="https://ahbap.org/disasters-turkey" target="_blank" rel="noopener noreferrer">Donation link!</a></p>
+                    </div>
+                    <div class="box usd eur tl">
+                        <img class="project-image" src="img/afad_logo_en.png" alt="AFAD">
+                        <h3 class="subtext"> <strong> AFAD <br> <font color="red">Currency: USD, EUR, TL</font></strong></h3>
+                        <ul class="subtext">Turkey's official disaster and emergency authority. Accepts donations via SWIFT transfers.</ul>
+                        <hr/>
+                        <p class="subtext2"><a class="project-link" href="https://en.afad.gov.tr/earthquake-donation-accounts" target="_blank" rel="noopener noreferrer">Donation link!</a></p>
+                    </div>
+                </div>
+                <div class="objects">
+                    <div class="box usd">
+                        <img class="project-image" src="img/gofundme.png" alt="Turkish Philanthropy Funds via NYU Turkish Students Association">
+                        <h3 class="subtext"> <strong> Turkish Philanthropy Funds via NYU Turkish Students Association <br> <font color="red">Currency: USD</font></strong></h3>
+                        <ul class="subtext">Funds go directly to US based aid foundation “Turkish Philanthropy Funds” </ul>
+                        <hr/>
+                        <p class="subtext2"><a class="project-link" href="https://www.gofundme.com/f/turkey-amidst-earthquake" target="_blank" rel="noopener noreferrer">Donation link!</a></p>
+                    </div>
+                    <div class="box usd eur tl">
+                        <img class="project-image" src="img/akut-logo.png" alt="AKUT Foundation">
+                        <h3 class="subtext"> <strong>AKUT Foundation <br> <font color="red">Currency: USD, EUR, TL</font></strong></h3>
+                        <ul class="subtext">NGO for rescue operations in Turkey currently working actively in the affected region. Accepts payments with credit/bank cards.</ul>
+                        <hr/>
+                        <p class="subtext2"><a class="project-link" href="https://www.akut.org.tr/en/donation" target="_blank" rel="noopener noreferrer">Donation link!</a></p>
+                    </div>
+                    <div class="box usd eur gbp tl">
+                        <img class="project-image" src="img/ahbap.png" alt="AHBAP">
+                        <h3 class="subtext"> <strong> AHBAP <br> <font color="red">Currency: USD, EUR, GBP, TL</font></strong></h3>
+                        <ul class="subtext">Turkey based aid organization that is currently active in the region. Accepts donations via SWIFT transfers.</ul>
+                        <hr/>
+                        <p class="subtext2"><a class="project-link" href="https://ahbap.org/disasters-turkey" target="_blank" rel="noopener noreferrer">Donation link!</a></p>
+                    </div>
+                    <div class="box usd eur tl">
+                        <img class="project-image" src="img/afad_logo_en.png" alt="AFAD">
+                        <h3 class="subtext"> <strong> AFAD <br> <font color="red">Currency: USD, EUR, TL</font></strong></h3>
+                        <ul class="subtext">Turkey's official disaster and emergency authority. Accepts donations via SWIFT transfers.</ul>
+                        <hr/>
+                        <p class="subtext2"><a class="project-link" href="https://en.afad.gov.tr/earthquake-donation-accounts" target="_blank" rel="noopener noreferrer">Donation link!</a></p>
+                    </div>
+                </div> -->
+
+                <!-- <section>
+                    <ul>
+                        <li class="list active" data-filter="All">All</li>
+                        <li class="list" data-filter="usd">USD</li>
+                        <li class="list" data-filter="eur">EUR</li>
+                        <li class="list" data-filter="gbp">GBP</li>
+                        <li class="list" data-filter="tl">TL</li>
+                    </ul>
+                
+                    <div class="bonus-container">
+                        1
+                        Turkish Philanthropy Funds via NYU Turkish Students Association
+                        <div class="itemBox usd">
+                            <div class="bonus-card">
+                                <img class="project-image" src="src/images/EngineeringClub.png" alt="Rowan University Competition">
+                                <h3>Turkish Philanthropy Funds via NYU Turkish Students Association <br> <font color="red">Currency: USD</font></h3>
+                                <ul class="subtext">Funds go directly to US based aid foundation “Turkish Philanthropy Funds” </ul>
+                                <hr/>
+                                <p class="subtext2"><a class="project-link" href="https://www.gofundme.com/f/turkey-amidst-earthquake" target="_blank" rel="noopener noreferrer">Donation link!</a></p>
+                            </div>
+                        </div>
+                        2
+                        AKUT Foundation
+                        <div class="bonus-card">
+                            <img class="project-image" src="src/images/EngineeringClub.png" alt="Rowan University Competition">
+                            <h3>AKUT Foundation <br> <font color="red">Currency: USD, EUR, TL</font></h3>
+                            <ul class="subtext">NGO for rescue operations in Turkey currently working actively in the affected region. Accepts payments with credit/bank cards.</ul>
+                            <hr/>
+                            <p class="subtext2"><a class="project-link" href="https://www.akut.org.tr/en/donation" target="_blank" rel="noopener noreferrer">Donation link!</a></p>
+                        </div>
+                        3
+                        AHBAP
+                        <div class="bonus-card">
+                            <img class="project-image" src="src/images/EngineeringClub.png" alt="Rowan University Competition">
+                            <h3>AHBAP <br> <font color="red">Currency: USD, EUR, GBP, TL</font></h3>
+                            <ul class="subtext">Turkey based aid organization that is currently active in the region. Accepts donations via SWIFT transfers.</ul>
+                            <hr/>
+                            <p class="subtext2"><a class="project-link" href="https://ahbap.org/disasters-turkey" target="_blank" rel="noopener noreferrer">Donation link!</a></p>
+                        </div>
+                        4
+                        AFAD
+                        <div class="bonus-card">
+                            <img class="project-image" src="src/images/EngineeringClub.png" alt="Rowan University Competition">
+                            <h3>AFAD <br> <font color="red">Currency: USD, EUR, TL</font></h3>
+                            <ul class="subtext">Turkey's official disaster and emergency authority. Accepts donations via SWIFT transfers.</ul>
+                            <hr/>
+                            <p class="subtext2"><a class="project-link" href="https://en.afad.gov.tr/earthquake-donation-accounts" target="_blank" rel="noopener noreferrer">Donation link!</a></p>
+                        </div>
+                    </div>
+                </section> -->
+            <!-- </div>
+        </div> -->
+
+        <!-- <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.list').click(function(){
+                    const value = $(this).attr('data-filter');
+                    if (value == 'all'){
+                        $('.itemBox').show('1000');
+                    }
+                    else {
+                        $('.itemBox').not('.'+value).hide('1000');
+                        $('.itemBox').filter('.'+value).show('1000');
+                    }
+                })
+            })
+        </script> -->
+    <!-- </body> -->
+</html>

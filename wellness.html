@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+        <!-- adding CSS and JavaScript -->
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Wake of Quake</title>
+    </head>
+
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="img/Untitled_Artwork.gif" alt=""></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="safety.html">SAFETY TIPS</a></li>
+                        <li><a href="wellness.html">WELLNESS RESOURCES</a></li>
+                        <li><a href="donate.html">DONATE</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            <div class="text-box">
+                <h1>Wake of Quake</h1>
+                <br>
+                <h2>Earthquake Relief in Turkey and Syria</h2>
+                <br>
+                <p>Offering a variety of wellness resources to help people manage their physical and emotional well-being during and after an earthquake. <br> Providing donation links as well as important information to those who want to help from farther away.</p>
+                <a href="https://www.gofundme.com/f/turkey-amidst-earthquake" target="_blank" class="hero-btn">See what NYU is doing to help</a>
+            </div>
+        </section>
+
+        <!-- <section class="news">
+            <h1>Latest News</h1>
+            <p>k;ajhf</p>
+            <div class="row">
+                <div class="news-col">
+                    <h3>news 1</h3>
+                    <p>lerhg;</p>
+                </div>
+                <div class="news-col">
+                    <h3>news 2</h3>
+                    <p>lerhg;</p>
+                </div>
+                <div class="news-col">
+                    <h3>news 3</h3>
+                    <p>lerhg;</p>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="wellness">
+            <h1 style="text-align: left;">It is okay to feel:</h1> <br> <br>
+
+            <div style="text-align: left;">
+                <li>Shock, denial, or disbelief.</li> 
+                <br><li>Confusion, difficulty concentrating.</li>
+                <br><li>Anger, irritability, mood swings.</li>
+                <br><li>Anxiety and fear.</li>
+                <br><li>Guilt, shame, self-blame.</li>
+                <br><li>Withdrawing from others.</li>
+                <br><li>Feeling sad or hopeless.</li>
+                <br><li>Feeling disconnected or numb.</li> <br> <br>
+            </div>
+            <h1 style="text-align: left;">It is okay to experience:</h1> <br> <br>
+
+            <div style="text-align: left;">
+                <li>Insomnia or nightmares.</li> 
+                <br><li>Fatigue.</li>
+                <br><li>Being startled easily.</li>
+                <br><li>Racing heartbeat.</li>
+                <br><li>Edginess and agitation.</li>
+                <br><li>Aches and pains.</li>
+                <br><li>Feeling sad or hopeless.</li>
+                <br><li>Muscle tension.</li> <br> <br>
+            </div>
+            <h2 style="text-align: left;">Below are some resources to help you.</h2> <br> <br>
+            <div style="text-align: left;">
+                <li><a href="https://www.helpguide.org/articles/ptsd-trauma/coping-with-emotional-and-psychological-trauma.htm">Recovering from emotional and psychological trauma</a></li>
+                <br><li><a href="https://www.samhsa.gov/find-help/national-helpline">SAMHSA's National Helpline</a></li>
+                <br><li><a href="https://www.samhsa.gov/find-help/disaster-distress-helpline">Disaster Distress Helpline</a></li>
+            </div>
+
+        </section>
+
+        <section class="footer">
+
+        </section>
+
+        <script>
+                var navLinks = document.getElementById("navLinks");
+
+                function showMenu() {
+                    navLinks.style.right = "0";
+                }
+                function hideMenu() {
+                    navLinks.style.right = "-200px";
+                }
+        </script>
+    </body>
+</html>
